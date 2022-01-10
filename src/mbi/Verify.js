@@ -29,9 +29,13 @@ const Verify = () => {
             className="form-control"
             id="mbiInput"
             value={mbi}
-            placeholder="0AA9-A99-AA99"
+            placeholder="0AA9A99AA99"
             onChange={handleChange}
+            aria-describedby="mbiHelp"
           ></input>
+          <div id="mbiHelp" class="form-text">
+            Enter the MBI without any spaces or dashes
+          </div>
         </div>
         <button type="submit" className="btn btn-primary">
           Verify
