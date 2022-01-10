@@ -3,7 +3,7 @@ import apiClient from "../api/axios-client";
 const defaultMBIState = { css: "alert-danger", text: "Invalid" };
 const validMBIState = { css: "alert-info", text: "Valid" };
 const Verify = () => {
-  const [mbi, setMbi] = useState("1PY9Q33CQ63");
+  const [mbi, setMbi] = useState("");
   const [verified, setVerified] = useState(false);
   const [mbiState, setMbiState] = useState(defaultMBIState);
   const handleChange = (e) => {
